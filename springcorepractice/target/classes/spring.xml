@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.technoelevate.springcorepractice.User"
+		name="user">
+		<property name="username" value="Reshma" />
+		<property name="password" value="reshu@66" />
+		<property name="contact" value="7721824366" />
+		<property name="email" value="reshmasatpute66@gmail.com" />
+		<property name="socialMedia" ref="whatsapp" />
+	</bean>
+
+	<bean class="com.technoelevate.springcorepractice.User"
+		name="user2">
+		<property name="username" value="Vaishnavi" />
+		<property name="password" value="vaishu" />
+		<property name="contact" value="9172570285" />
+		<property name="email" value="vaishu@gmial.com" />
+		<property name="socialMedia" ref="facebook" />
+	</bean>
+	
+	<bean class="com.technoelevate.springcorepractice.WhatsApp"
+		name="whatsapp" />
+	<bean class="com.technoelevate.springcorepractice.Facebook"
+		name="facebook" />
+	<bean class="com.technoelevate.springcorepractice.Instagram"
+		name="insta" />
+		
+</beans>
